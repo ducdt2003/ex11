@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<head th:fragment="head_info">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop - Thế giới sách của bạn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="./assets/css/books.css">
+</head>
+
+<div th:fragment="header">
+    <div class="topbar">
+      <div class="inner">
+        <div class="topbar-left">
+          <a href="#"> Đăng nhập</a>
+          <a href="#">Đăng ký</a>
+        </div>
+        <div class="topbar-right">
+          <a href="#">f</a><a href="#">𝕏</a><a href="#">G+</a><a href="#">⊕</a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Logo Bookshop">
+        </a>
+        <nav>
+          <a href="#" class="active">TRANG CHỦ</a>
+          <a href="#">SẢN PHẨM</a>
+          <a href="#">GIỚI THIỆU</a>
+          <a href="#">TIN TỨC</a>
+          <a href="#">LIÊN HỆ</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="subheader">
+      <div class="subheader-inner">
+        <button class="cat-btn"> <i class="fa-solid fa-bars fa-lg" style="color: rgb(99, 230, 190);"></i> Danh mục sách ▾</button>
+        
+        <div class="right-actions">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+            <input type="text" placeholder="Tìm kiếm sách">
+          </div>
+          <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng: <span class="cart-count">0</span></button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<footer th:fragment="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Giúp đỡ</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn mua hàng</a></li>
+          <li><a href="#">Hướng dẫn thanh toán</a></li>
+          <li><a href="#">Phương thức vận chuyển</a></li>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Chính sách</h4>
+        <ul>
+          <li><a href="#">Chính sách đổi trả</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Điều khoản dịch vụ</a></li>
+          <li><a href="#">Quy định sử dụng</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tài khoản</h4>
+        <ul>
+          <li><a href="#">Đăng nhập</a></li>
+          <li><a href="#">Đăng ký</a></li>
+          <li><a href="#">Thông tin tài khoản</a></li>
+          <li><a href="#">Quản lý giỏ hàng</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <div class="ci"><span>📍</span><span>Tầng 2 – Tòa nhà Heaven Canary, Phố Kim Giao, Hà Đông, Hà Nội</span></div>
+        <div class="ci"><span>📞</span><span>(04) 6678 191</span></div>
+        <div class="ci"><span>🕐</span><span>Thứ 2 – CN 8:30–12:00 / 13:00–18:00</span></div>
+        <div class="ci"><span>✉️</span><span>support@glamenz.vn</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Bản quyền thuộc <a href="#">Bookshop Theme</a>. Phát triển bởi <a href="#">Bizweb</a></span>
+      <div class="pay-icons">
+        <span class="pay">VISA</span>
+        <span class="pay">MC</span>
+        <span class="pay">PAYPAL</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
